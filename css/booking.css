@@ -1,0 +1,18 @@
+.dropdownMenuButton1{
+    color: blue;
+}
+/* .age{
+    width: 20px;
+} */
+.fullscreen-bg {
+    position: fixed;
+    z-index: -1;
+    top:0; right:0; bottom:0; left:0;
+    background: url(	https://cdn.pixabay.com/photo/2017/08/22/14/40/river-2669180_960_720.jpg) center;
+    background-size: cover;
+  }
+
+.form-control{
+    opacity: 0.7;
+    filter: alpha(opacity=40); 
+}

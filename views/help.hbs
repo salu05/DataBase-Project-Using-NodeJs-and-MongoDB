@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <title>DB-project</title>
+  </head>
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/help">Help</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutus">About Us</a>
+      </li>
+     
+    </ul>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">SAS Travels</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+         <a class="nav-link" href="/index">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="/booking">Booking</a>
+              <a class="nav-link" href="/details">Solo</a>
+              <a class="nav-link" href="/createadmin">Login/Signup</a>
+              <a class="nav-link" href="/generate">Generate</a>
+              <a class="nav-link" href="/register">Register</a>
+              <a class="nav-link" href="/change">Change</a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+    <link  rel='stylesheet' href="css/help.css">
+
+
+
+
+    <div id="contact-form">
+        <div>
+            <h1>Nice to Meet You!</h1> 
+            <h4>Have a question or just want to get in touch? Let's chat.</h4> 
+        </div>
+            <p id="failure">Oopsie...message not sent.</p>  
+            <p id="success">Your message was sent successfully. Thank you!</p>
+    
+
+
+               <form  action="/help" method="POST" >
+                <div>
+                  <label for="name">
+                      <span class="required">Name: *</span> 
+                      <input type="text" id="name" name="name" value="" placeholder="Your Name" required="required" tabindex="1" autofocus="autofocus" />
+                  </label> 
+                </div>
+                <div>
+                  <label for="email">
+                      <span class="required">Email: *</span>
+                      <input type="email" id="email" name="email" value="" placeholder="Your Email" tabindex="2" required="required" />
+                  </label>  
+                </div>
+                <!-- <div>		          
+                  <label for="subject">
+                  <span>Subject: </span>
+                      <select id="subject" name="subject" tabindex="4">   
+                         <option value="hello">Product Price Question</option>
+                         <option value="quote">any </option>About the quality!
+                          </option>
+                      </select>
+                  </label>
+                </div> -->
+
+            
+
+                <div>		          
+                    <label for="message">
+                        <span class="required">Message: *</span> 
+                        <textarea id="message" name="msg" placeholder="Please write your message here." tabindex="5" required="required"></textarea> 
+                    </label>  
+                  </div>
+
+
+
+                  <div class="rate">
+                    <h7> &nbsp;Rate Us : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </h7>
+                    <input name="star" type="radio" id="star5" name="rate" value="5" />
+                    <label for="star5" title="text">5 stars</label>
+                    <input name="star" type="radio" id="star4" name="rate" value="4" />
+                    <label for="star4" title="text">4 stars</label>
+                    <input name="star" type="radio" id="star3" name="rate" value="3" />
+                    <label for="star3" title="text">3 stars</label>
+                    <input name="star" type="radio" id="star2" name="rate" value="2" />
+                    <label for="star2" title="text">2 stars</label>
+                    <input name="star" type="radio" id="star1" name="rate" value="1" />
+                    <label for="star1" title="text">1 star</label>
+                  </div><br> <br>
+
+
+
+
+                  <div>		           
+                    <button name="submit" type="submit" id="submit" >SEND</button> 
+                  </div>
+                 </form>
+      
+    
+
+
+                
+               
+
+
+
+
+
+
+
+
+
+
+             
+                </div>
+
+
+
+
+
+
+</body>
+</html>

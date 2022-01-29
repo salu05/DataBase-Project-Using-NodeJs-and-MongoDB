@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>DB-PROJECT</title>
+  </head>
+  <body>
+   
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="createadmin.js"></script>
+
+
+ <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/help">Help</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/aboutus">About Us</a>
+      </li>
+     
+    </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SAS Travels</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+             <a class="nav-link" href="/index">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="/booking">Booking</a>
+                  <a class="nav-link" href="/details">Solo</a>
+              <a class="nav-link" href="/createadmin">Login/Signup</a>
+        
+           
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+      <link  rel='stylesheet' href="css/createadmin.css">
+
+
+
+
+
+
+
+
+
+
+
+      <input type="radio" checked id="toggle--login" name="toggle" class="ghost" />
+      <input type="radio" id="toggle--signup" name="toggle" class="ghost" />
+    
+{{!-- //loginAdmin --}}
+      <form class="form form--login framed"  action="/loginAdmin" method="post" >
+        <input type="email" placeholder="Email" name="emails" class="input input--top" />
+        <input type="password" placeholder="Password" name="passwords" class="input" />
+        <input type="submit" value="Log in" class="input input--submit" />
+        
+        <label for="toggle--signup" class="text text--small text--centered">New? <b>Sign up</b></label>
+      </form>
+      
+
+
+
+
+
+
+
+      <form class="form form--signup framed" action="/createadmin" method="post" >
+        <h2 class="text text--centered text--omega">Here we go</h2>
+    
+     <input type="text" placeholder="Username" name="uname" class="input input--top" />
+        <input type="email" placeholder="Email" name="email" class="input" />
+        <input type="password" placeholder="Password" name="password" class="input" />
+         <input type="password" placeholder="Confirm Password" name="cpassword" class="input" />
+       
+
+{{!-- <br> <button type="submit" class="btn-primary"></button> --}}
+
+        <input type="submit" value="Sign up"  class="input input--submit" />
+        
+        <label for="toggle--login" class="text text--small text--centered">Not new? <b>Log in</b></label>
+           </form>
+   
+
+
+
+
+    
+      <div class="legal">
+        <a class="text text--small text--border-right" href="javascript:;">Terms</a>
+        <a class="text text--small text--border-right" href="javascript:;">Privacy</a>
+        <a class="text text--small" href="javascript:;">Password help</a>
+      </div>
+    
+      <div class="photo-cred">
+        <a class="text text--small" title="Check out their blog." href="http://cabinporn.com/post/125371354365/the-cabin-book-book-in-the-wild-21-in-the-us" target="_blank">Photo posted by <b>cabinporn</b></a>
+      </div>
+    
+      <div class="fullscreen-bg"></div>
+
+
+
+
+
+
+
+
+
+
+      
+  </body>
+  </html>
